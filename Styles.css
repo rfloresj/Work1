@@ -223,6 +223,40 @@ li{
     height: 50%;
   }
 
+  /* Dispositivos móviles con una vista vertical */
+  @media (max-width: 575px){
+    .navbar,
+    .actions{
+    display: none;
+    }
+    h1{
+      font-size: 40px;}
+    .main{
+      margin-top: 30%;
+    }
+    .logo{
+      width: 100%;
+    }
+    .publish > form{
+      flex-direction: column;
+    }
+
+    .publish > form > div{
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    .publish > form > div > input {
+      width: 65%;
+    }
+  }
+
+  /* @media (min-width: 576px) and (max-width: 767px){
+
+  } */
+
+  
+
 /* .features {
     display: grid;
     grid-template: repeat(2, 330px) / repeat(2, 1fr);
